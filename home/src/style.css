@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 
 :root {
-  --black-color: #101117;
-  --white-color: #fff;
+  --black-color: #26282b;
+  --white-color: #faf9f6;
 }
 
 * {
@@ -20,13 +20,13 @@ body {
 
   background: linear-gradient(
     to right,
-    #fbfaff 0%,
+    #050505 0%,
     40.00000059604645%,
-    #fbfaff 80.0000011920929%,
+    #181b1e 80.0000011920929%,
     90.00000059604645%,
-    #ecf0fb 100%
+    #23272a 100%
   );
-  color: var(--black-color);
+  color: var(--white-color);
   font-size: 16px;
   line-height: 1.3;
 }
@@ -38,7 +38,7 @@ canvas {
 }
 a {
   text-decoration: none;
-  color: var(--black-color);
+  color: var(--white-color);
 }
 ul,
 ol {
@@ -68,7 +68,7 @@ button {
 }
 .circle {
   position: absolute;
-  background-color: var(--black-color);
+  background-color: var(--white-color);
   width: 10px;
   height: 10px;
   left: 0px;
@@ -81,7 +81,7 @@ button {
 }
 .circle-follow {
   position: absolute;
-  border: 1px solid var(--black-color);
+  border: 1px solid var(--white-color);
   width: 40px;
   height: 40px;
   left: 0px;
@@ -99,7 +99,7 @@ button {
 }
 .ham-btn i {
   font-size: 24px;
-  color: var(--black-color);
+  color: var(--white-color);
   line-height: 1;
 }
 
@@ -153,7 +153,7 @@ button {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--black-color);
+  background: var(--white-color);
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
@@ -199,7 +199,7 @@ button {
   display: inline-block;
   width: 20px;
   height: 3px;
-  background: var(--black-color);
+  background: var(--white-color);
   border-radius: 50px;
 }
 
@@ -243,7 +243,7 @@ button {
   right: 0;
   width: 20%;
   height: 6px;
-  background: var(--black-color);
+  background: var(--white-color);
   transform: translate(-30%, 100%);
   -webkit-transform: translate(-30%, 100%);
 }
