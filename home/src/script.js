@@ -235,8 +235,8 @@ const positions = [
 ];
 
 const material = new THREE.MeshLambertMaterial({
-  color: "#c7a5a5",
-  emissive: "red"
+  color: "#d8f744",
+  emissive: "green"
 });
 const group = new THREE.Group();
 const spheres = [];
