@@ -2,7 +2,7 @@ body, html, #app {
   margin: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,0.5) 200%);
+  background: radial-gradient(circle, rgba(5, 5, 5,1) 0%, rgba(98, 90, 86,0.5) 200%);
 }
 
 #app {
@@ -24,7 +24,7 @@ h1, h2 {
   padding: 0;
   color: black;
   text-transform: uppercase;
-  text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  text-shadow: 0 0 20px rgba(165, 169, 174, 1);
   line-height: 100%;
   user-select: none;
 }
