@@ -22,7 +22,7 @@ body, html, #app {
 h1, h2 {
   margin: 0;
   padding: 0;
-  color: black;
+  color: white;
   text-transform: uppercase;
   text-shadow: 0 0 20px rgba(165, 169, 174, 1);
   line-height: 100%;
