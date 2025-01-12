@@ -29,7 +29,7 @@ button2.addEventListener('click', () => {
   button1.classList.remove('active');
 
   // Redirect to home page
-  window.location.href = 'home/dist/home.html';
+  window.location.href = 'https://slob16.github.io/sian/home/dist/index.html';
 });
 
 
