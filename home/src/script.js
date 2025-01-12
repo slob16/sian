@@ -20,8 +20,8 @@ renderer.shadowMap.type = THREE.PCFSoftShadowMap; // Softer shadows
 
 // Orbit Controls
 const controls = new THREE.OrbitControls(camera, renderer.domElement);
-controls.enableDamping = false;
-controls.dampingFactor = 0.05;
+controls.enabled = false;
+scene.remove(controls)
 
 const radii = [
   1,
