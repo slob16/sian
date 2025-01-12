@@ -20,7 +20,7 @@ renderer.shadowMap.type = THREE.PCFSoftShadowMap; // Softer shadows
 
 // Orbit Controls
 const controls = new THREE.OrbitControls(camera, renderer.domElement);
-controls.enabled = false;
+controls.disabled = false;
 scene.remove(controls)
 
 const radii = [
