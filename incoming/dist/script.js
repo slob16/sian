@@ -9,23 +9,27 @@ const bg = Spheres2Background(document.getElementById('webgl-canvas'), {
 
 // Get references to the buttons
 const button1 = document.getElementById('colors-btn');
-const button2 = document.getElementById('home-btn'); // New button
+const button2 = document.getElementById('home-btn');
 
-// Handle background interaction
-document.body.addEventListener('click', (ev) => {
-  if (ev.target !== button1 && ev.target !== button2) {
-    bg.togglePause(); // Avoid pausing when clicking buttons
-  }
-});
-
-// Button 1: Change Colors
+// Add a click listener to button1
 button1.addEventListener('click', () => {
+  // Toggle the active state
+  button1.classList.add('active');
+  button2.classList.remove('active');
+
+  // Change colors functionality
   bg.spheres.setColors([0xffffff * Math.random(), 0xffffff * Math.random(), 0xffffff * Math.random()]);
   bg.spheres.light1.color.set(0xffffff * Math.random());
 });
 
-// Button 2: Go to Home Page
+// Add a click listener to button2
 button2.addEventListener('click', () => {
-  // Redirect to the home page
-  window.location.href = 'home/dist/home.html'; // Update this path if your home page is different
+  // Toggle the active state
+  button2.classList.add('active');
+  button1.classList.remove('active');
+
+  // Redirect to home page
+  window.location.href = 'home/dist/home.html';
 });
+
+
