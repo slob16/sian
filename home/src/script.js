@@ -287,14 +287,14 @@ spotLightFolder.add(spotLight, "intensity", 0, 2);
 spotLightFolder.add(spotLight.position, "x", -30, 30);
 spotLightFolder.add(spotLight.position, "y", -30, 30);
 spotLightFolder.add(spotLight.position, "z", -30, 30);
-spotLightFolder.open();
+spotLightFolder.close();
 
 const directionalLight1Folder = gui.addFolder("Directional Light 1");
 directionalLight1Folder.add(directionalLight1, "intensity", 0, 2);
 directionalLight1Folder.add(directionalLight1.position, "x", -30, 30);
 directionalLight1Folder.add(directionalLight1.position, "y", -30, 30);
 directionalLight1Folder.add(directionalLight1.position, "z", -30, 30);
-directionalLight1Folder.open();
+directionalLight1Folder.close();
 
 // Add at the top
 const raycaster = new THREE.Raycaster();
