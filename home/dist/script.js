@@ -274,6 +274,7 @@ scene.add(directionalLight1);
 // GUI
 const gui = new dat.GUI();
 gui.close();
+gui.domElement.style.display = "none";
 
 const ambientLightFolder = gui.addFolder("Ambient Light");
 ambientLightFolder.add(ambientLight, "intensity", 0, 2);
