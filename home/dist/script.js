@@ -20,8 +20,8 @@ renderer.shadowMap.type = THREE.PCFSoftShadowMap; // Softer shadows
 
 // Orbit Controls
 const controls = new THREE.OrbitControls(camera, renderer.domElement);
-controls.disabled = false;
-scene.remove(controls)
+controls.enableDamping = true;
+controls.dampingFactor = 0.05;
 
 const radii = [
   1,
@@ -282,7 +282,7 @@ ambientLightFolder
   .onChange((value) => {
     ambientLight.color.setHex(value);
   });
-ambientLightFolder.open();
+ambientLightFolder.close();
 
 const spotLightFolder = gui.addFolder("Spot Light");
 spotLightFolder.add(spotLight, "intensity", 0, 2);
