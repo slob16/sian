@@ -235,10 +235,12 @@ const positions = [
 ];
 
 const material = new THREE.MeshLambertMaterial({
-  color: "#32CD32",
+  color: "#e0f19c",
   emissive: "green"
 });
 const group = new THREE.Group();
+
+
 const spheres = [];
 
 positions.forEach((pos, index) => {
@@ -501,3 +503,5 @@ window.addEventListener("resize", () => {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
+
+
