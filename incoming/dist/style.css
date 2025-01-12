@@ -63,10 +63,19 @@ h2 {
   gap: 15px;
 }
 
-button {
+button-1 {
   font-family: "Montserrat", serif;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
   border: 1px solid grey;
-  padding: 4px 8px;
+  padding: 10px 10px;
 }
+
+button-2 {
+  font-family: "Montserrat", serif;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 10px 10px;
+}
+
