@@ -502,6 +502,27 @@ window.addEventListener("resize", () => {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
-});
+}
 
+function removeDummy() {
+    var elem = document.getElementById('dummy');
+    elem.parentNode.removeChild(elem);
+    return false;
+}
+function pageInit() {
+    // Hook up the "remove dummy" button
+    var btn = document.getElementById('btnRemoveDummy');
+    if (btn.addEventListener) {
+        // DOM2 standard
+        btn.addEventListener('click', removeDummy, false);
+    }
+    else if (btn.attachEvent) {
+        // IE (IE9 finally supports the above, though)
+        btn.attachEvent('onclick', removeDummy);
+    }
+    else {
+        // Really old or non-standard browser, try DOM0
+        btn.onclick = removeDummy;
+    }
+});
 
