@@ -280,7 +280,7 @@ ambientLightFolder
   .onChange((value) => {
     ambientLight.color.setHex(value);
   });
-ambientLightFolder.open();
+ambientLightFolder.close();
 
 const spotLightFolder = gui.addFolder("Spot Light");
 spotLightFolder.add(spotLight, "intensity", 0, 2);
