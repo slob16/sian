@@ -503,7 +503,7 @@ window.addEventListener("resize", () => {
 });
 
 function removeDummy() {
-    var elem = document.getElementById('dummy');
+    var elem = document.getElementById('open controls');
     elem.parentNode.removeChild(elem);
     return false;
 }
