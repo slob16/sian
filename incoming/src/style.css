@@ -58,7 +58,7 @@ h2 {
   bottom: 15px;
   z-index: 2;
 
-  display: fixed;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
