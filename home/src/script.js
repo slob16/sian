@@ -357,7 +357,7 @@ function initLoadingAnimation() {
 
 // Call loading animation when page loads
 window.addEventListener("load", initLoadingAnimation);
-
+document.getElementById("dummy").remove(initLoadingAnimation);
 // Find all elements with hide-text class
 const hiddenElements = document.querySelectorAll(".hide-text");
 
