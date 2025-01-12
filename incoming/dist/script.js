@@ -27,5 +27,5 @@ button1.addEventListener('click', () => {
 // Button 2: Go to Home Page
 button2.addEventListener('click', () => {
   // Redirect to the home page
-  window.location.href = '/'; // Update this path if your home page is different
+  window.location.href = 'home.html'; // Update this path if your home page is different
 });
