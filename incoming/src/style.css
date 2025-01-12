@@ -51,6 +51,7 @@ h2 {
   z-index: 1;
 }
 
+/* Container for buttons */
 .buttons {
   position: fixed;
   width: 100%;
@@ -63,18 +64,26 @@ h2 {
   gap: 15px;
 }
 
+/* Common button styles */
 button {
   font-family: "Montserrat", serif;
   background: rgba(255, 255, 255, 0.5);
-  border-radius: 5px;
-  border: 1px solid grey;
-  padding: 4px 8px;
+  border: 2px #d8f744;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-button-2 {
-  font-family: "Montserrat", serif;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 5px;
-  border: 1px solid grey;
-  padding: 10px 10px;
+/* Hover effect for buttons */
+button:hover {
+  background: #26282b;
+  color: #faf9f6;
+}
+
+/* Active state for buttons */
+button.active {
+  background: #faf9f6;
+  border-color: #d8f744;
+  color: #26282b;
 }
