@@ -235,7 +235,7 @@ const positions = [
 ];
 
 const material = new THREE.MeshLambertMaterial({
-  color: "#e0f19c",
+  color: "#2a4c09",
   emissive: "green"
 });
 const group = new THREE.Group();
