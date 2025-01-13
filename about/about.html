@@ -1,96 +1,68 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Whoosh | About</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
-<link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
-<link rel="icon" href="./assets/favicon.png" type="image/x-icon">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css'>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<body>
-
-  <div class="mouse-effect">
-    <div class="circle">
-    </div>
-    <div class="circle-follow">
-    </div>
+  <!-- Logo Section -->
+  <div class="logo">
+    <a href="home.html">
+      <img src="./assets/logo.png" alt="Whoosh Logo">
+    </a>
   </div>
-  <header class="hide-text">
-    <div class="header-inner">
-      <a href="home.html" class="navbar-brand">   
-      </a>
-      <nav>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="partnerships.html">Partnerships</a></li>
-          <li><a href="immersive.html">Immersive Experiences</a></li>
-          <li><a href="playground.html">Playground</a></li>
-        </ul>
-      </nav>
-    </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="partnerships.html">Partnerships</a></li>
+        <li><a href="immersive.html">Immersive Experiences</a></li>
+        <li><a href="playground.html">Playground</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <h1 class="main-txt">whoosh</h1>
-
-  <section class="banner hide-text">
-    <div class="banner-inner">
-      <div class="top-desc">
-      </div>
-      <div class="bottom-desc">
-        <div class="left-desc">
-          <div class="desc-inner">
-            <h5></h5>
-            <h6>&copy; Media Stacks International 2025 |<a href="terms.html"> Terms</a> | <a href="policy.html"> Policy</a></h6>
-          </div>
-        </div>
-        <div class="middle">
-          <h2></h2>
-        </div>
-        <div class="right-desc">
-          <div class="desc-inner">
-            <span>Links</span>
-             <ul>
-              <li>
-                <a href="https://www.linkedin.com/company/media-stacks/">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.wetalentedfew.com/">
-                  <i class="fa-solid fa-film"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://mediastacks.co.uk/">
-                  <i class="fa-solid fa-earth-europe"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/sianbreward/">
-                  <i class="fa-solid fa-person-dress"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+  <!-- Main Content -->
+  <main class="content">
+    <h1 class="main-txt">Whoosh</h1>
+    <!-- Add your content blocks here -->
+    <div class="content-block">
+      <p>This is where you can add your main content.</p>
     </div>
-  </section>
+  </main>
 
-  <span class="rotated-text hide-text">Move me like one of your French girls.</span>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-left">
+      <p>&copy; Media Stacks International 2025</p>
+    </div>
+    <div class="footer-center">
+      <a href="terms.html">Terms</a> | <a href="policy.html">Policy</a>
+    </div>
+    <div class="footer-right">
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/company/media-stacks/"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://www.wetalentedfew.com/"><i class="fa-solid fa-film"></i></a></li>
+        <li><a href="https://mediastacks.co.uk/"><i class="fa-solid fa-earth-europe"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/sianbreward/"><i class="fa-solid fa-person-dress"></i></a></li>
+      </ul>
+    </div>
+  </footer>
 
-  <canvas class="webgl" id="webgl"></canvas>
-</body>
-<!-- partial -->
+  <!-- Scripts -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js'></script>
   <script src='https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js'></script>
   <script src='https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js'></script>
   <script src='https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/RGBELoader.js'></script>
   <script src='https://cdn.jsdelivr.net/npm/dat.gui@0.7.7/build/dat.gui.min.js'></script>
-  <script  src="./script.js"></script>
-
+  <script src="./script.js"></script>
 </body>
 </html>
