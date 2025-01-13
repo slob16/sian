@@ -13,23 +13,23 @@ const button2 = document.getElementById('home-btn');
 
 // Add a click listener to button1
 button1.addEventListener('click', () => {
-  // Toggle the active state
   button1.classList.add('active');
   button2.classList.remove('active');
 
   // Change colors functionality
-  bg.spheres.setColors([0xffffff * Math.random(), 0xffffff * Math.random(), 0xffffff * Math.random()]);
+  bg.spheres.setColors([
+    0xffffff * Math.random(),
+    0xffffff * Math.random(),
+    0xffffff * Math.random(),
+  ]);
   bg.spheres.light1.color.set(0xffffff * Math.random());
 });
 
 // Add a click listener to button2
 button2.addEventListener('click', () => {
-  // Toggle the active state
   button2.classList.add('active');
   button1.classList.remove('active');
 
   // Redirect to home page
   window.location.href = 'https://slob16.github.io/sian/home/dist/index.html';
 });
-
-
