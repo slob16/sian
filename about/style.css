@@ -40,20 +40,7 @@ a {
   text-decoration: none;
   color: var(--white-color);
 }
-ul,
-ol {
-  list-style: none;
-}
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-h1 {
-  font-size: 160px;
-}
-h2 {
-  font-size: 34px;
-}
+
 button {
   outline: none;
   border: none;
@@ -74,21 +61,6 @@ button {
   transform: translate(45%, -600%) rotate(90deg);
   text-transform: uppercase;
   font-size: 14px;
-}
-
-
-
-@media (max-width: 1199px) {
-  .mouse-effect {
-    display: none;
-  }
-/* General Styles */
-body {
-  margin: 0;
-  font-family: 'Oswald', serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 /* Logo Section */
@@ -189,3 +161,7 @@ body {
   color: #d8f744;
 }
 
+@media (max-width: 1199px) {
+  .mouse-effect {
+    display: none;
+  }
