@@ -17,6 +17,10 @@ body {
 
 body {
   font-family: "Oswald", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
 
   background: linear-gradient(
     to right,
@@ -31,7 +35,7 @@ body {
   line-height: 1.3;
 }
 canvas {
-  position: fixed;
+  position: flex;
   top: 0;
   left: 0;
   z-index: -1;
@@ -76,24 +80,14 @@ button {
   font-size: 14px;
 }
 
-
-
 @media (max-width: 1199px) {
   .mouse-effect {
     display: none;
   }
-/* General Styles */
-body {
-  margin: 0;
-  font-family: 'Oswald', serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
+  
 /* Logo Section */
 .logo {
-  position: absolute;
+  position: fixed;
   top: 10px;
   left: 10px;
 }
@@ -108,7 +102,7 @@ body {
   width: 100%;
   background-color: 'transparent';
   padding: 10px 0;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
 }
@@ -116,7 +110,7 @@ body {
 .navbar nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   margin: 0;
   padding: 0;
 }
@@ -158,7 +152,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #26282b;
+  background-color: transparent;
   color: #faf9f6;
 }
 
@@ -196,16 +190,7 @@ body {
   font-family: consolas;
 }
 
-body
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: 'transparentt';
-}
-
-.container
+.container1
 {
   display: flex;
   justify-content: center;
@@ -214,7 +199,7 @@ body
   padding: 40px 0;
 }
 
-.container .box
+.container1 .box
 {
   position: relative;
   width: 320px;
@@ -226,7 +211,7 @@ body
   transition: 0.5s;
 }
 
-.container .box::before
+.container1 .box::before
 {
   content:' ';
   position: absolute;
@@ -241,7 +226,7 @@ body
   transition: 0.5s;
 }
 
-.container .box::after
+.container1 .box::after
 {
   content:'';
   position: absolute;
@@ -256,8 +241,8 @@ body
   filter: blur(30px);
 }
 
-.container .box:hover:before,
-.container .box:hover:after
+.container1 .box:hover:before,
+.container1 .box:hover:after
 {
   transform: skewX(0deg);
   left: 20px;
@@ -265,25 +250,25 @@ body
   
 }
 
-.container .box:nth-child(1):before,
-.container .box:nth-child(1):after
+.container1 .box:nth-child(1):before,
+.container1 .box:nth-child(1):after
 {
   background: linear-gradient(315deg, #799f0c, #f6db01)
 }
 
-.container .box:nth-child(2):before,
-.container .box:nth-child(2):after
+.container1 .box:nth-child(2):before,
+.container1 .box:nth-child(2):after
 {
   background: linear-gradient(315deg, #799f0c, #f6db01)
 }
 
-.container .box:nth-child(3):before,
-.container .box:nth-child(3):after
+.container1 .box:nth-child(3):before,
+.container1 .box:nth-child(3):after
 {
   background: linear-gradient(315deg, #799f0c, #f6db01)
 }
 
-.container .box span
+.container1 .box span
 {
   display: block;
   position: absolute;
@@ -295,7 +280,7 @@ body
   pointer-events: none;
 }
 
-.container .box span::before
+.container1 .box span::before
 {
   content:'';
   position: absolute;
@@ -312,7 +297,7 @@ body
   box-shadow: 0 5px 15px rgba(0,0,0,0.08)
 }
 
-.container .box:hover span::before
+.container1 .box:hover span::before
 {
   top: -50px;
   left: 50px;
@@ -321,7 +306,7 @@ body
   opacity: 1;
 }
 
-.container .box span::after
+.container1 .box span::after
 {
   content:'';
   position: absolute;
@@ -339,7 +324,7 @@ body
   animation-delay: -1s;
 }
 
-.container .box:hover span:after
+.container1 .box:hover span:after
 {
   bottom: -50px;
   right: 50px;
@@ -361,7 +346,7 @@ body
   }
 }
 
-.container .box .content
+.container1 .box .content
 {
   position: relative;
   left: 0;
@@ -375,27 +360,27 @@ body
   color: #faf9f6;
 }
 
-.container .box:hover .content
+.container1 .box:hover .content
 {
   left: -25px;
   padding: 60px 40px;
 }
 
-.container .box .content h2
+.container1 .box .content h2
 {
   font-size: 2em;
   color: #26282b;
   margin-bottom: 10px;
 }
 
-.container .box .content p
+.container1 .box .content p
 {
   font-size: 1.1em;
   margin-bottom: 10px
   line-height: 1.4em;
 }
 
-.container .box .content a
+.container1 .box .content a
 {
   display: inline-block;
   font-size: 1.1em;
@@ -408,7 +393,7 @@ body
   margin-top: 5px;
 }
 
-.container .box .content a:hover
+.container1 .box .content a:hover
 {
   background: transparent;
   border: 1px solid rgba(5, 4, 4, 0.4);
