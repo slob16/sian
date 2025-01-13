@@ -53,26 +53,29 @@ h2 {
 
 /* Container for buttons */
 .buttons {
-  position: flex;
+  position: fixed; /* Fixed at the bottom of the viewport */
   width: 100%;
   bottom: 15px;
   z-index: 2;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
+  display: flex; /* Enable flexbox layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 15px; /* Space between buttons */
+  padding: 10px; /* Optional: Add padding around buttons */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 /* Common button styles */
 button {
   font-family: "Montserrat", serif;
   background: rgba(255, 255, 255, 0.5);
-  border: 2px #d8f744;
+  border: 2px solid #d8f744; /* Fix border color */
   border-radius: 10px;
   padding: 10px 20px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  flex-shrink: 0; /* Prevent buttons from shrinking */
 }
 
 /* Hover effect for buttons */
@@ -86,4 +89,16 @@ button.active {
   background: #faf9f6;
   border-color: #d8f744;
   color: #26282b;
+}
+
+/* Make buttons responsive */
+@media (max-width: 600px) {
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    gap: 10px; /* Reduce gap between buttons */
+  }
+
+  button {
+    width: 100%; /* Buttons take up full width */
+  }
 }
