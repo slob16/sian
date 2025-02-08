@@ -11,6 +11,14 @@ body, html, #app {
   font-family: "Montserrat", serif;
 }
 
+@font-face {
+  font-family: 'highcruiser';
+  src: url('home/assets/highcruiser/highcruiser-personaluseonly-webfont.woff
+2') format('woff2'),
+       url('home/assets/highcruiser/highcruiser-personaluseonly-webfont.woff
+') format('woff');
+}
+
 .hero {
   height: 100%;
   display: flex;
@@ -34,6 +42,7 @@ h1 {
   z-index: 2;
   font-size: 100px;
   font-weight: 700;
+  font-family: 'highcruiser';
 }
 
 h2 {
