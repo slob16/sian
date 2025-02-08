@@ -1,11 +1,3 @@
-@font-face {
-  font-family: 'highcruiser';
-  src: url('home/assets/highcruiser/highcruiser-personaluseonly-webfont.woff
-2') format('woff2'),
-       url('home/assets/highcruiser/highcruiser-personaluseonly-webfont.woff
-') format('woff');
-}
-
 body, html, #app {
   margin: 0;
   width: 100%;
@@ -26,6 +18,14 @@ body, html, #app {
   align-items: center;
   justify-content: center;
 }
+@font-face {
+  font-family: 'highcruiser';
+  src: url('home/assets/highcruiser/highcruiser-personaluseonly-webfont.woff
+2') format('woff2'),
+       url('home/assets/highcruiser/highcruiser-personaluseonly-webfont.woff
+') format('woff');
+}
+
 
 h1, h2 {
   margin: 0;
