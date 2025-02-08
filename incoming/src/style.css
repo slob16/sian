@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'highcruiser';
+  src: url('home/assets/highcruiser/highcruiser-personaluseonly-webfont.woff
+2') format('woff2'),
+       url('home/assets/highcruiser/highcruiser-personaluseonly-webfont.woff
+') format('woff');
+}
+
 body, html, #app {
   margin: 0;
   width: 100%;
@@ -9,14 +17,6 @@ body, html, #app {
   position: relative;
   height: 100%;
   font-family: "Montserrat", "highcruiser", serif;
-}
-
-@font-face {
-  font-family: 'highcruiser';
-  src: url('home/assets/highcruiser/highcruiser-personaluseonly-webfont.woff
-2') format('woff2'),
-       url('home/assets/highcruiser/highcruiser-personaluseonly-webfont.woff
-') format('woff');
 }
 
 .hero {
@@ -31,7 +31,7 @@ h1, h2 {
   margin: 0;
   padding: 0;
   color: white;
-  text-transform: uppercase;
+  text-transform: none;
   text-shadow: 0 0 20px rgba(165, 169, 174, 1);
   line-height: 100%;
   user-select: none;
