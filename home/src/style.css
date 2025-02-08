@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 
+@font-face {
+  font-family: 'highcruiser';
+  src: url('home/assets/highcruiser/highcruiser-personaluseonly-webfont.woff
+2') format('woff2'),
+       url('home/assets/highcruiser/highcruiser-personaluseonly-webfont.woff
+') format('woff');
+}
+
 :root {
   --black-color: #26282b;
   --white-color: #faf9f6;
