@@ -86,9 +86,9 @@ button:hover {
 
 /* Active state for buttons */
 button.active {
-  background: #faf9f6;
+  background: #26282b;
   border-color: #d8f744;
-  color: #26282b;
+  color: #faf9f6;
 }
 
 /* Make buttons responsive */
